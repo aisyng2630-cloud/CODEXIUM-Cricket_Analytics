@@ -1,2 +1,0 @@
-import { Card, CardContent } from "@/components/ui/card";
-export function MatchHeader(){return <Card><CardContent className="pt-4"><div className="flex items-center justify-between"><div><h2 className="text-xl font-bold">India 176/4 vs Australia 139/6</h2><p className="text-sm text-muted-foreground">Wankhede · Toss: IND bat</p></div><div className="flex items-center gap-2 text-sm"><span className="h-2 w-2 animate-pulseDot rounded-full bg-red-500"/>Live</div></div></CardContent></Card>}

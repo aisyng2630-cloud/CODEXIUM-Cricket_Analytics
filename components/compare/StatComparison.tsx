@@ -1,3 +1,0 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-const rows=[["Average",52,48],["Strike Rate",137,129],["Boundary %",22,19],["Economy",7.6,6.9],["Wickets",44,63],["Consistency",88,81]];
-export function StatComparison(){return <Card><CardHeader><CardTitle>Stat Comparison</CardTitle></CardHeader><CardContent><table className='w-full text-sm'><tbody>{rows.map(([m,a,b])=><tr key={String(m)} className='border-b'><td>{String(a>b?`🏆 ${m}`:m)}</td><td className='text-center'>{String(a)}</td><td className='text-right'>{String(b)}</td></tr>)}</tbody></table></CardContent></Card>}
