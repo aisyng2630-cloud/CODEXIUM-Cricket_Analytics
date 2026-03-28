@@ -55,3 +55,21 @@ A unified system combining:
 ⭐ *Bringing data-driven intelligence to cricket.*
 
  
+
+## 🔐 AI Chatbot (Gemini) Setup
+
+1. Copy env template:
+   ```bash
+   cp .env.example .env.local
+   ```
+2. Set your Gemini key in `.env.local`:
+   ```bash
+   GEMINI_API_KEY=your_actual_key
+   ```
+3. Run the app:
+   ```bash
+   npm install
+   npm run dev
+   ```
+
+The floating AI chat uses `app/api/chat/route.ts` as a secure server-side proxy to Gemini.
