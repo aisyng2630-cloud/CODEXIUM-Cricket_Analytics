@@ -1,0 +1,4 @@
+"use client";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Card, CardContent } from "@/components/ui/card";
+export function Scorecard(){return <Card><CardContent className="pt-4"><Tabs defaultValue='bat'><TabsList><TabsTrigger value='bat'>Batting</TabsTrigger><TabsTrigger value='bowl'>Bowling</TabsTrigger></TabsList><TabsContent value='bat'><table className='mt-2 w-full text-sm'><thead><tr><th className='text-left'>Player</th><th>R</th><th>B</th><th>SR</th></tr></thead><tbody><tr><td>Iyer</td><td>76*</td><td>42</td><td>181</td></tr></tbody></table></TabsContent><TabsContent value='bowl'><table className='mt-2 w-full text-sm'><thead><tr><th className='text-left'>Bowler</th><th>O</th><th>R</th><th>W</th></tr></thead><tbody><tr><td>Bumrah</td><td>4</td><td>19</td><td>2</td></tr></tbody></table></TabsContent></Tabs></CardContent></Card>}
